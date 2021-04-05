@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    .box > button[type="submit"]
+{
+    border: 0;
+    background: none;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border: 2px solid #1E8449;
+    padding: 14px, 10px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-right: 40px;
+    padding-left: 40px;
+    width: 200px;
+    outline: none;
+    color: #808B96;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+    font-size: 16px;
+}
+.box > button[type="submit"]:hover
+{
+    background: #1E8449;
+    color: white;
+}
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/zlog.css')}}">
+    <title>Login Page</title>
+</head>
+<body>
+    <form action="/dashboard" class="box" method="post">
+        <h1>Login</h1>
+        <input type="text" name="uname" id="uname"  placeholder="Username">
+        <input type="password" name="pass" id="pass" placeholder="Password">
+        <div class="checkbox mb-3" style="color: #808B96;">
+        <label>
+            <input type="checkbox" value="remember-me"> Remember me
+        </label>
+        </div>
+        <button class="button1" type="submit">Sign in</button>
+        <p class="mt-5 mb-3 text-muted" style="color: #808B96;">&copy; {{params['blog_name']}} 2017–2021</p>
+    </form>
+</body>
+</html>

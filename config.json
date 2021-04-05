@@ -1,0 +1,21 @@
+{
+  "params":
+  {
+    "local_server":"True",
+    "local_uri": "mysql://root:@localhost/codingthunder",
+    "prod_uri": "mysql://root:@localhost/codingthunder",
+    "fb_url": "https://facebook.com/codingthunder",
+    "tw_url": "https://twitter.com/coddingthunder",
+    "gh_url": "https://github.com/coddingthunder",
+    "blog_name": "Invincible's Blog",
+    "gmail_username": "bilal03154679237@gmail.com",
+    "gmail_password": "Bilal001122",
+    "about_text": "Hi, My name is Bilal. I am a software engineer and i am good on Python, HTML, CSS, Bootstrap, C++, C#",
+    "no_of_posts": 2,
+    "log_img": "login.svg",
+    "admin_username": "Bilal",
+    "admin_password": "Bilal1122",
+    "upload_location": "D:\\Flask\\Uploader"
+
+  }
+}
